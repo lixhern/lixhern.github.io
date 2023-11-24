@@ -1,0 +1,398 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #303030;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.center {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.header {
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#343f55, #acb0b9)
+}
+
+.header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: auto;
+    height: 70px;
+    margin: 15px 0;
+    vertical-align: top;
+}
+
+#tel a {
+    display: none;
+    position: relative;
+    top: 18px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* #tel a:hover {
+    color: #FAFAFA;
+    text-shadow: 0px 0px 5px #FFFFFF;
+} */
+
+.article {
+    margin: 130px 0 30px 0;
+}
+
+.article .center {
+    display: flex;
+}
+
+.center .gallery {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 64%;
+    margin-right: 1%;
+}
+
+/* #rotation {
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    margin-bottom: 15px;
+    border: 1px solid #e2e2e2;
+}
+
+#rotation img {
+    cursor: move;
+} */
+
+#rotation img {
+    width: 100%;
+    /* vertical-align: top; */
+}
+
+.product_info {
+    width: 35%;
+    padding: 15px;
+}
+
+/* .photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo div {
+    width: calc((100% - 2 * 2%)/3);
+    aspect-ratio: 16/9;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px; 
+} */
+
+.product_name {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.product_description table {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+table th,
+table td {
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+    padding: 6px 0;
+}
+
+
+table td:first-child {
+    width: 140px;
+}
+
+span.price {
+    font-size: 20px;
+
+}
+
+.buttons {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+a.back-button,
+a.call-button {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 0;
+    color: #FFF;
+    background: #8e93a0;
+    border-radius: 10px;
+    user-select: none;
+}
+
+a.back-button:hover,
+a.call-button:hover {
+    box-shadow: 0px 0px 30px 1px #515d74 inset;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #8e93a0;
+}
+
+.footer .center {
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+#copyright {
+    color: #FFF;
+}
+
+#copyright:before {
+    content: url(../images/system/ico_copyrigtr.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+
+@media (min-width: 1200px) {
+    .center {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.8px) {
+    table th {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    table td {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    table td:first-child {
+        width: 125px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.8px) {
+    .article .center {
+        flex-direction: column;
+    }
+
+    .center .gallery,
+    .center .product_info {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .overlay-svg {
+        width: 20px;
+        height: auto;
+    }
+
+    table th {
+        font-size: 16px;
+        line-height: 18px;
+
+    }
+
+    table td {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    table td:first-child {
+        width: 230px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767.8px) {
+    .header {
+        position: relative;
+    }
+    #logo img {
+        width: 200px;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    /* #tel a {
+        display: none;
+        font-size: 17px;
+        position: relative;
+        top: 14px;
+    } */
+
+    .article {
+        margin-top: 20px;
+    }
+
+    .article .center {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .center .gallery,
+    .product_info {
+        box-sizing: border-box;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .slick-slider {
+        margin-bottom: 3% !important;
+    }
+
+    .center .gallery {
+        margin-bottom: 15px;
+    }
+
+
+    /* .photo {
+        display: none;
+    } */
+
+    .product_name {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    span.price {
+        font-size: 17px;
+    }
+
+    table td:first-child {
+        width: 35%;
+    }
+
+    /* .buttons {
+        display: flex;
+    } */
+
+    .footer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 499.8px) {
+    .header {
+        position: relative;
+    }
+
+    #logo {
+        width: 250px;
+        margin: 8px auto 8px 0;
+        
+    }
+
+    #logo img {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .article {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .article .center {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .slick-slider {
+        margin-bottom: 3% !important;
+    }
+    
+    /* #tel {
+        display: none;
+    } */
+
+    .center .gallery,
+    .product_info {
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 0 15px;
+    }
+
+
+
+    /* .photo {
+        display: none;
+    } */
+
+    .product_name {
+        font-size: 21px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    span.price {
+        font-size: 17px;
+    }
+
+    table td:first-child {
+        width: 35%;
+    }
+
+    /* 
+    .buttons {
+        display: flex;
+    } */
+
+    .footer {
+        display: none;
+    }
+}

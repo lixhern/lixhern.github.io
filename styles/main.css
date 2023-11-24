@@ -1,0 +1,240 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #303030;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.center {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#343f55, #acb0b9)
+}
+
+/*.header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
+.header .center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo img {
+    width: auto;
+    height: 70px;
+    margin: 15px 0;
+    vertical-align: top;
+    filter: drop-shadow(5px 5px 5px #505050);
+}
+
+#logo img:hover {
+    filter: drop-shadow(5px 5px 5px #000);
+}
+
+.navbar {   
+    display: flex;
+    position: relative;
+    top: 18px;
+}
+
+/*
+.navbar a { БЫЛ ЭТОТ НАВБАР
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+*/
+.navbar a{  
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px; 
+    padding: 1em; /*ДОПИСАЛ ЭТО */
+}
+.navbar a:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+/* #tel a:hover {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #FFFFFF;
+} */
+
+.main {
+    margin: 130px 0 30px 0;
+}
+
+.main .center {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+a.card {
+    display: block;
+    width: calc((100% - 3 * 1.5%)/4);
+    margin-bottom: 1.5%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    /* border-radius: 10px; */
+    padding: 8px;
+}
+
+
+a.card:hover {
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+    border: 1px solid #ccc;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+}
+
+.photo img {
+    width: 100%;
+    /* border-radius: 5px; */
+    vertical-align: top;
+}
+
+h2.product_name {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.description span {
+    display: block;
+}
+
+.description span.size {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description span.price {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #8e93a0;
+}
+
+.footer .center {
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+#copyright {
+    color: #FFF;
+}
+
+#copyright:before {
+    content: url(../images/system/ico_copyrigtr.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+
+
+/* Медиа-запросы */
+
+
+@media (min-width: 1200px) {
+    .center {
+        width: 1200px;
+    }
+
+    a.card:not(:nth-child(4n)) {
+        margin-right: 1.5%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.8px) {
+    a.card:not(:nth-child(4n)) {
+        margin-right: 1.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.8px) {
+    a.card {
+        width: calc((100% - 2 * 1.5%)/3);
+    }
+
+    a.card:not(:nth-child(3n)) {
+        margin-right: 1.5%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767.8px) {
+    #logo img {
+        width: 200px;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    .main {
+        margin-top: 85px;
+    }
+
+    a.card {
+        width: calc((100% - 1 * 1.5%)/2);
+    }
+
+    a.card:not(:nth-child(2n)) {
+        margin-right: 1.5%;
+    }
+}
+
+@media (max-width: 499.8px) {
+    #logo {
+        width: 250px;
+        margin: 8px auto 8px 0;
+    }
+
+    #logo img {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        margin-top: 90px;
+    }
+    
+
+    a.card {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гефест</title>
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" href="../styles/image.css">
+    <link rel="stylesheet" href="../styles/card.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../js/image360.jquery.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="center">
+                <div id="logo"><img src="../images/system/logo.png" alt=""></div>
+                <div id="tel">
+                    <a href="tel:+74958943640">+7 (495) 894-36-40</a>
+                </div>
+            </div>
+        </header>
+        <article class="article">
+            <div class="center">
+                <div class="gallery">
+                    <!-- <div> -->
+                    <div id="main-slider-container">
+                        <button onclick="openFullscreen();" class="btn full-screen" id="full-screen-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="enable-background:new 0 0 100 100" viewBox="30 27 40 40" width="25px"
+                                height="25px">
+                                <path
+                                    d="M53.94 55.354a1.382 1.382 0 0 0-.847-.354h-6.186a1.39 1.39 0 0 0-.847.354l-7.791 7.792c-.196.195-.136.354.14.354h5.596c.273 0 .495.214.495.505v.99a.507.507 0 0 1-.51.505h-8.98a.51.51 0 0 1-.51-.51v-8.98a.5.5 0 0 1 .505-.51h.99c.279 0 .505.22.505.495v5.596c0 .273.162.333.354.14l7.792-7.79c.195-.197.354-.578.354-.848v-6.186a1.39 1.39 0 0 0-.354-.847l-7.792-7.791c-.195-.196-.354-.136-.354.14v5.596a.492.492 0 0 1-.505.495h-.99a.507.507 0 0 1-.505-.51v-8.98a.51.51 0 0 1 .51-.51h8.98a.5.5 0 0 1 .51.505v.99c0 .279-.22.505-.495.505h-5.596c-.273 0-.333.162-.14.354l7.79 7.792c.197.195.578.354.848.354h6.186c.272 0 .655-.162.847-.354l7.791-7.792c.196-.195.136-.354-.14-.354h-5.596a.492.492 0 0 1-.495-.505v-.99c0-.279.228-.505.51-.505h8.98a.51.51 0 0 1 .51.51v8.98a.5.5 0 0 1-.505.51h-.99a.498.498 0 0 1-.505-.495v-5.596c0-.273-.162-.333-.354-.14l-7.792 7.79a1.382 1.382 0 0 0-.354.848v6.186c0 .272.162.655.354.847l7.792 7.791c.195.196.354.136.354-.14v-5.596c0-.273.214-.495.505-.495h.99c.279 0 .505.228.505.51v8.98a.51.51 0 0 1-.51.51h-8.98a.5.5 0 0 1-.51-.505v-.99c0-.279.22-.505.495-.505h5.596c.273 0 .333-.162.14-.354l-7.79-7.792ZM47.491 47a.496.496 0 0 0-.491.491v5.018c0 .271.228.491.491.491h5.018a.496.496 0 0 0 .491-.491v-5.018a.496.496 0 0 0-.491-.491h-5.018Z"
+                                    fill="#fefefe" />
+                            </svg></button>
+                        <button onclick="closeFullscreen(); " class="btn exit-full-screen none" id="exit-full-btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="enable-background:new 0 0 100 100" viewBox="0 0 100 125">
+                                <path
+                                    d="M22 78c1 1 2.3 1.5 3.5 1.5S28.1 79 29 78l21-21 21 21c1 1 2.3 1.5 3.5 1.5S77.1 79 78 78c2-2 2-5.1 0-7.1l-21-21 21-21c2-2 2-5.1 0-7.1s-5.1-2-7.1 0l-21 21L29 22c-2-2-5.1-2-7.1 0s-2 5.1 0 7.1l21 21L22 71c-2 1.9-2 5.1 0 7z"
+                                    fill="#474747" />
+
+                            </svg></button>
+                        <a class="prev none" id="prev-id"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="enable-background:new 0 0 600 600" viewBox="0 0 600 600" width="50px"
+                                height="50px">
+                                <path
+                                    d="M180 560a19.936 19.936 0 0 1-14.142-5.857c-7.811-7.811-7.811-20.475 0-28.285L391.716 300 165.858 74.142c-7.811-7.811-7.811-20.474 0-28.284s20.474-7.811 28.284 0l240 240c7.811 7.811 7.811 20.474 0 28.285l-240 240A19.936 19.936 0 0 1 180 560z" />
+                            </svg></a>
+                        <a class="next none" id="next-id"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="enable-background:new 0 0 600 600" viewBox="0 0 600 600" width="50px"
+                                height="50px">
+                                <path
+                                    d="M180 560a19.936 19.936 0 0 1-14.142-5.857c-7.811-7.811-7.811-20.475 0-28.285L391.716 300 165.858 74.142c-7.811-7.811-7.811-20.474 0-28.284s20.474-7.811 28.284 0l240 240c7.811 7.811 7.811 20.474 0 28.285l-240 240A19.936 19.936 0 0 1 180 560z" />
+                            </svg></a>
+                        <div class="container">
+                            <div class="clue row none" id="clue-id">
+                                <div class="column div-text">
+
+                                    <p class="clue text p ">
+                                        Изображение возможно вращать самим!<br /><br />
+                                        Для этого нужно зажать<br />
+                                        курсор на изображении <br />
+                                        и перемещать его<br />
+                                        вправо или влево
+                                    </p>
+                                </div>
+                                <div class="column div-button">
+                                    <button class="clue button" id="clue-btn" style="font-weight: bold;">
+                                        ПОНЯТНО
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="main-slider">
+
+                            <div class="main-slide" id = "rotate-img">
+                                <div class="img" id="rotation" alt="Slide 1">
+                                    <div class="rotation-btn">
+                                        <button class="btn rotate-360" id="rotate-hand"><svg
+                                                xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                                viewBox="-2 0 40 30" width="50px" height="50px">
+                                                <circle cx="18" cy="14.303" r="3.061" />
+                                                <path
+                                                    d="M11.334 20.409h13.333a2.99 2.99 0 0 0 2.99-2.99v-6.23a2.99 2.99 0 0 0-2.99-2.99h-.69a2.99 2.99 0 0 0-2.923-2.369h-6.106a2.988 2.988 0 0 0-2.923 2.368h-.69a2.99 2.99 0 0 0-2.99 2.99v6.23a2.99 2.99 0 0 0 2.989 2.991zM18 9.941a4.362 4.362 0 1 1-.001 8.723A4.362 4.362 0 0 1 18 9.941zm-7.477.5h1.496a.81.81 0 1 1 0 1.619h-1.496a.81.81 0 1 1 0-1.619z" />
+                                                <path
+                                                    d="M28.894 11.727s8.818 4.685 3.223 9.675c-.909.809-4.951 3.364-11.055 3.865v2.505c3.585-.392 9.227-1.55 12.423-4.959 6.801-7.255-4.591-11.086-4.591-11.086zM18.459 25.884l-4.079-2.79c-.531-.364-.967-.134-.967.51v1.485c-5.245-.756-8.698-2.947-9.528-3.688-5.596-4.99 3.223-9.675 3.223-9.675s-11.393 3.831-4.592 11.086c2.773 2.958 7.383 4.22 10.897 4.759v1.916c0 .646.436.874.967.511l4.079-2.791c.533-.364.533-.959 0-1.323z" />
+                                            </svg></button>
+                                        <button class="btn auto-rotate" id="rotate-auto"
+                                            style="font-weight: bold;">auto</button>
+                                    </div>
+                                    <div>
+                                        <div id="rot-img">
+                                            <img src="../images/rotation/modern/040.jpg">
+                                            <img src="../images/rotation/modern/050.jpg">
+                                            <img src="../images/rotation/modern/060.jpg">
+                                            <img src="../images/rotation/modern/070.jpg">
+                                            <img src="../images/rotation/modern/080.jpg">
+                                            <img src="../images/rotation/modern/090.jpg">
+                                            <img src="../images/rotation/modern/100.jpg">
+                                            <img src="../images/rotation/modern/110.jpg">
+                                            <img src="../images/rotation/modern/120.jpg">
+                                            <img src="../images/rotation/modern/130.jpg">
+                                            <img src="../images/rotation/modern/140.jpg">
+                                            <img src="../images/rotation/modern/150.jpg">
+                                            <img src="../images/rotation/modern/160.jpg">
+                                            <img src="../images/rotation/modern/170.jpg">
+                                            <img src="../images/rotation/modern/180.jpg">
+                                            <img src="../images/rotation/modern/190.jpg">
+                                            <img src="../images/rotation/modern/200.jpg">
+                                            <img src="../images/rotation/modern/210.jpg">
+                                            <img src="../images/rotation/modern/220.jpg">
+                                            <img src="../images/rotation/modern/230.jpg">
+                                            <img src="../images/rotation/modern/240.jpg">
+                                            <img src="../images/rotation/modern/250.jpg">
+                                            <img src="../images/rotation/modern/260.jpg">
+                                            <img src="../images/rotation/modern/270.jpg">
+                                            <img src="../images/rotation/modern/280.jpg">
+                                            <img src="../images/rotation/modern/290.jpg">
+                                            <img src="../images/rotation/modern/300.jpg">
+                                            <img src="../images/rotation/modern/310.jpg">
+                                            <img src="../images/rotation/modern/320.jpg">
+                                            <img src="../images/rotation/modern/330.jpg">
+                                            <img src="../images/rotation/modern/340.jpg">
+                                            <img src="../images/rotation/modern/350.jpg">
+                                            <img src="../images/rotation/modern/000.jpg">
+                                            <img src="../images/rotation/modern/010.jpg">
+                                            <img src="../images/rotation/modern/020.jpg">
+                                            <img src="../images/rotation/modern/030.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-slide" id="img1">
+
+                                <img class="img" src="../images/static/modern/04.JPG" alt="Slide 2">
+                            </div>
+
+                            <div class="main-slide" id="img2">
+                                
+                                <img class="img" src="../images/static/modern/05.JPG" alt="Slide 3">
+                            </div>
+
+                            <div class="main-slide" id="img3">
+                           
+                                <img class="img" id="full-screen-image" src="../images/static/modern/06.JPG"
+                                    alt="Slide 4">
+                            </div>
+
+                            <div class="main-slide" id="img4">
+                             
+                                <img class="img" id="full-screen-image" src="../images/static/modern/08.JPG"
+                                    alt="Slide 5">
+                            </div>
+
+                            <div class="main-slide" id="img5">
+                           
+                                <img class="img" id="full-screen-image" src="../images/static/modern/10.JPG"
+                                    alt="Slide 5">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="thumbnail-slider-container">
+                        <div id="thumbnail-slider" class="thumbnail-slider">
+                            <div class="thumbnail container-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="overlay-svg" xml:space="preserve"
+                                    width="40" height="29" viewBox="0 0 40 29" fill="none">
+                                    <path
+                                        d="M19.9994 13.5622C21.915 13.5622 23.468 11.9507 23.468 9.9629C23.468 7.97509 21.915 6.36365 19.9994 6.36365C18.0837 6.36365 16.5308 7.97509 16.5308 9.9629C16.5308 11.9507 18.0837 13.5622 19.9994 13.5622Z" />
+                                    <path
+                                        d="M12.4457 17.1426H27.5541C29.426 17.1426 30.9422 15.567 30.9422 13.6268V6.30134C30.9422 4.36002 29.426 2.78557 27.5541 2.78557H26.7722C26.447 1.19348 25.0883 0 23.46 0H16.541C14.9115 0 13.5528 1.19348 13.2288 2.78439H12.4469C10.576 2.78439 9.05875 4.35885 9.05875 6.30016V13.6257C9.05761 15.567 10.5749 17.1426 12.4457 17.1426ZM19.9993 4.83389C22.728 4.83389 24.941 7.1303 24.941 9.96173C24.941 12.7932 22.728 15.0908 19.9993 15.0908C17.2707 15.0908 15.0577 12.7943 15.0577 9.96291C15.0577 7.13148 17.2707 4.83389 19.9993 4.83389ZM11.5268 5.42181H13.222C13.7285 5.42181 14.1398 5.84746 14.1398 6.37306C14.1398 6.89984 13.7296 7.32549 13.222 7.32549H11.5268C11.0214 7.32549 10.6089 6.90102 10.6089 6.37306C10.61 5.84864 11.0214 5.42181 11.5268 5.42181Z" />
+                                    <path
+                                        d="M32.3439 6.93396C32.3439 6.93396 42.3361 12.4428 35.9961 18.3102C34.9661 19.2615 30.3859 22.2658 23.4691 22.8549V25.8003C27.5314 25.3394 33.9247 23.9778 37.5463 19.9693C45.2528 11.4386 32.3439 6.93396 32.3439 6.93396Z" />
+                                    <path
+                                        d="M20.5195 23.5803L15.8973 20.2997C15.2956 19.8717 14.8016 20.1421 14.8016 20.8994V22.6455C8.85819 21.7566 4.94541 19.1803 4.00489 18.309C-2.33624 12.4416 7.65705 6.93274 7.65705 6.93274C7.65705 6.93274 -5.25297 11.4374 2.4536 19.9681C5.59584 23.4463 10.8197 24.9302 14.8016 25.5639C14.8016 25.618 14.8016 25.6839 14.8016 25.7344V27.8169C14.8016 28.5765 15.2956 28.8445 15.8973 28.4177L20.5195 25.1359C21.1234 24.7079 21.1234 24.0083 20.5195 23.5803Z" />
+                                </svg>
+                                <img class="img background-svg-image" src="../images/rotation/modern/040.jpg"
+                                    alt="Thumbnail 1">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="img" src="../images/static/modern/04.JPG" alt="Thumbnail 2">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="img" src="../images/static/modern/05.JPG" alt="Thumbnail 3">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="img" src="../images/static/modern/06.JPG" alt="Thumbnail 4">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="img" src="../images/static/modern/08.JPG" alt="Thumbnail 5">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="img" src="../images/static/modern/10.JPG" alt="Thumbnail 6">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="product_info">
+                    <div class="product_name">Ограждение «Модерн»</div>
+                    <div class="product_description">
+                        <table>
+                            <tr>
+                                <td>Размер:</td>
+                                <td>2,5м х 2,2м высота — 0,5м</td>
+                            </tr>
+                            <tr>
+                                <td>Материал:</td>
+                                <td>несущие элементы (каркас, столбы) — стальной профиль 40х20, 40х40, толщина стенки
+                                    1,5мм. Ажурные элементы — профиль 20х20, толщина стенки 1,5мм</td>
+                            </tr>
+                            <tr>
+                                <td>Покрытие:</td>
+                                <td>акриловые грунт, эмаль</td>
+                            </tr>
+                            <tr>
+                                <td>Цвет:</td>
+                                <td>черный матовый</td>
+                            </tr>
+                            <tr>
+                                <td>Патина:</td>
+                                <td>нет</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span class="price">35 720 р/шт</span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <table class="optionally">
+                        <tr>
+                            <th colspan="2">Дополнительные услуги</th>
+                        </tr>
+                        <tr>
+                            <td>Заливка цоколя:</td>
+                            <td>17 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж ограждения:</td>
+                            <td>3 000 р</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <div class="buttons">
+            <a href="../index.html" class="back-button">назад</a>
+            <a href="tel:+74958943640" class="call-button">позвонить</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="center"><span id="copyright">ООО «Гефест» 2023</span></div>
+    </footer>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#rotation").image360();
+        });
+    </script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/fullsreen.js"></script>
+
+</body>
+
+</html>

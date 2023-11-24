@@ -1,0 +1,44 @@
+.nav-btn {
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .nav-btn{
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        color: white;
+        background-color: rgba(28,28,28,0);
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        display: none;
+    }
+    .drop .navbar.clicked {
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        background: linear-gradient(#acb0b9, #343f55);
+    }
+    
+
+}
+@media (min-width: 500px) and (max-width: 767.8px) {
+
+    .drop .navbar.clicked {
+        top: 64px;
+    }
+    
+}
+
+@media (max-width: 499.8px) {
+
+    .drop .navbar.clicked{
+        top: 70px;  
+    }
+    
+    
+}

@@ -1,0 +1,226 @@
+
+    #main-slider-container {
+        position: relative;
+        max-width: 100%;
+        /* margin: auto; */
+        
+    }
+
+    #main-slider {
+        width: 100%;
+        position: relative;
+        cursor: pointer;   
+    }
+
+
+    :fullscreen #exit-full-btn{
+        display: block;
+    }
+    :-webkit-full-screen #exit-full-btn{
+        display: block;
+    }
+
+    :-moz-full-screen #exit-full-btn{
+        display: block;
+    }
+
+    :-ms-fullscreen #exit-full-btn{
+        display: block;
+    }
+
+    :fullscreen #full-screen-btn{
+        display: none;
+    }
+    :-webkit-full-screen #full-screen-btn{
+        display: none;
+    }
+
+    :-moz-full-screen #full-screen-btn{
+        display: none;
+    }
+
+    :-ms-fullscreen #full-screen-btn{
+        display: none;
+    }
+
+
+
+
+    :-webkit-full-screen #main-slider {
+        width: 100%;
+        /* position: relative; */
+        cursor: pointer; 
+        position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh; 
+      
+      z-index: 998; 
+      }
+      
+
+      :-moz-full-screen #main-slider{
+        width: 100%;
+        /* position: relative; */
+        cursor: pointer;  
+        position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh; 
+      
+      z-index: 998; 
+      }
+      
+
+      :-ms-fullscreen #main-slider{
+        width: 100%;
+        /* position: relative; */
+        cursor: pointer;  
+        position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh; 
+     
+      z-index: 998; 
+      }
+      
+
+      :fullscreen #main-slider{
+        width: 100%;
+        /* position: relative; */
+        cursor: pointer;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        z-index: 998;
+      }
+
+
+
+
+
+    /* .main-slide {
+        width: 100%;
+        height: auto;
+        display: none;
+        border-radius: 10px;
+    } */
+    
+    .main-slide .img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    #thumbnail-slider-container {
+        width: 100%;
+    }
+    
+    .thumbnail-slider  {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+     .thumbnail  {        /*ДОБАВИЛ ЭТО */
+        margin: 0 4px;
+        /* margin: 0 .05%; */
+        cursor: pointer;
+    } 
+    
+    
+    
+    .thumbnail .img {
+        width: 100%;
+      }
+    .thumbnail.slick-current .img{  /*ДОБАВИЛ ЭТО */
+        border: 2px solid rgb(166, 0, 0);
+    }
+    /* .thumbnail.active .img  {
+        border: 3px solid rgb(166, 0, 0);
+    } */
+
+    #position-indicators {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .position-indicator {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+        background-color: rgb(107, 107, 107);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .position-indicator.active {
+        transform: scale(1.4);
+        background-color: rgb(107, 107, 107);
+    }
+
+    .prev,
+    .next {
+        width: auto;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 1%;
+        margin-top: -22px;
+        /*color: black;
+        font-weight: bold;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        font-size: 18px; */
+    }
+
+    .prev {
+        left: 0;
+        z-index: 1000;
+    }
+
+    .next {
+        right: 0;
+        z-index: 1000;
+        /* border-radius: 3px 0 0 3px; */
+    }
+
+
+.main-sliderimg.fullscreen {
+    /* Ваши стили для полноэкранного режима */
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.slick-list {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 768.8px){
+    .btn.rotate-360,
+    .btn.auto-rotate{
+        transform: scale(0.9);
+    }
+    
+}
+
+
+
+
+
+  
+
+
